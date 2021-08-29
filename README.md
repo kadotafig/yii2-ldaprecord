@@ -1,6 +1,8 @@
-Yii2 LdapRecord extension
+Yii2 LdapRecord extension updated for use with ZimbraLDAP
 ====================
 [Documentation](https://ldaprecord.com/docs/) for LdapRecord
+
+[Documentation](https://wiki.zimbra.com/wiki/Zimbra_Directory_Service_(LDAP)) for ZimbraLDAP
 
 Installation
 ------------
@@ -8,13 +10,13 @@ Installation
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 ```
-php composer.phar require --prefer-dist nohnaimer/yii2-ldaprecord "*"
+php composer.phar require --prefer-dist kadotafig/yii2-ldaprecord "*"
 ```
 
 or add
 
 ```
-"nohnaimer/yii2-ldaprecord": "*"
+"kadotafig/yii2-ldaprecord": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -52,6 +54,23 @@ Configuration
                      ],
                 ],
                 'ldap' => [
+                    'hosts' => ['192.168.1.2'],
+                    'base_dn' => 'dc=local,dc=com',
+                    'username' => 'cn=admin,dc=mts,dc=by',
+                    'password' => 'password',
+
+                    // Optional Configuration Options
+                    'port' => 389,
+                    'version' => 3,
+
+                    // Custom LDAP Options
+                    'options' => [
+                        // See: http://php.net/ldap_set_option
+                        LDAP_OPT_X_TLS_REQUIRE_CERT => LDAP_OPT_X_TLS_HARD
+                    ],
+                ],
+            ],
+            'zimbra' => [
                     'hosts' => ['192.168.1.2'],
                     'base_dn' => 'dc=local,dc=com',
                     'username' => 'cn=admin,dc=mts,dc=by',

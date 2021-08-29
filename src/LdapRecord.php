@@ -1,6 +1,6 @@
 <?php
 
-namespace nohnaimer\ldaprecord;
+namespace kadotafig\ldaprecord;
 
 use yii\base\Component;
 use LdapRecord\Container;
@@ -11,7 +11,7 @@ use LdapRecord\ConnectionException;
 
 /**
  * Class LdapRecord
- * @package nohnaimer\ldaprecord
+ * @package kadotafig\ldaprecord
  *
  * @mixin Connection
  */

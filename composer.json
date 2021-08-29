@@ -1,5 +1,5 @@
 {
-    "name": "nohnaimer/yii2-ldaprecord",
+    "name": "kadotafig/yii2-ldaprecord",
     "description": "Yii2 extension for library LdapRecord",
     "keywords": [
         "yii2",
@@ -7,28 +7,28 @@
         "ldap",
         "active directory",
         "openldap",
-        "ldaprecord"
+        "ldaprecord",
+        "zimbra"
     ],
-    "homepage": "https://github.com/nohnaimer/yii2-ldaprecord",
+    "homepage": "https://github.com/kadotafig/yii2-ldaprecord",
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Maksim Astapenko",
-            "email": "actapenko@gmail.com"
+            "email": "actapenko@gmail.com",
+            "name": "Bart Bailely",
+            "email": "figkadota@gmail.com"
         }
     ],
     "require": {
         "php": ">=7.2",
         "yiisoft/yii2": "2.0.*",
-        "directorytree/ldaprecord": "2.4.*"
-    },
-    "require-dev": {
-        "roave/security-advisories": "dev-latest"
+        "directorytree/ldaprecord": "2.6.*"
     },
     "autoload": {
         "psr-4": {
-            "nohnaimer\\ldaprecord\\": "src"
+            "kadotafig\\ldaprecord\\": "src"
         }
     },
     "repositories": {
