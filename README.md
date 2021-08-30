@@ -29,10 +29,10 @@ Configuration
 'components' => [
 ...
 'ldap' => [
-            'class' => nohnaimer\ldaprecord\LdapRecord::class,
+            'class' => kadotafig\ldaprecord\LdapRecord::class,
             'providers' => [
                 'ad' => [
-                    'class' => nohnaimer\ldaprecord\LdapRecord::class,
+                    'class' => kadotafig\ldaprecord\LdapRecord::class,
                      // Mandatory Configuration Options
                      'hosts'            => ['192.168.1.1'],
                      'base_dn'          => 'dc=local,dc=com',
